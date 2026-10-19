@@ -392,3 +392,59 @@ footer a:hover {
     }
 }
 
+/* =========================
+   10. Futuristic Ambient Glow
+========================= */
+
+body {
+    position: relative;
+    isolation: isolate;
+    overflow-x: hidden;
+    background:
+        radial-gradient(
+            ellipse at 15% 15%,
+            rgba(91, 76, 210, 0.09),
+            transparent 38%
+        ),
+        var(--background);
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+
+    background:
+        radial-gradient(
+            circle at 80% 30%,
+            rgba(88, 110, 255, 0.12),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 20% 75%,
+            rgba(142, 92, 255, 0.09),
+            transparent 32%
+        );
+
+    animation: ambientGlow 12s ease-in-out infinite alternate;
+}
+
+@keyframes ambientGlow {
+    from {
+        opacity: 0.45;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1.08);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body::before {
+        animation: none;
+    }
+}
