@@ -740,16 +740,23 @@ body > * {
 }
 
 
-/* Small homepage-only corrections: match the shared site background */
+/* Small homepage-only corrections: match the glow used elsewhere on the site */
 .homepage {
-    background: var(--background);
-    background-image: none;
+    background-color: var(--background);
+    background-image:
+        radial-gradient(ellipse at 18% 20%, rgba(91, 54, 177, 0.22), transparent 42%),
+        radial-gradient(ellipse at 82% 35%, rgba(34, 91, 157, 0.20), transparent 45%),
+        linear-gradient(180deg, #111326 0%, #0b0d12 100%);
 }
 .homepage .centered-hero {
-    background: var(--background);
+    background:
+        radial-gradient(ellipse at 18% 18%, rgba(91, 54, 177, 0.22), transparent 48%),
+        radial-gradient(ellipse at 82% 36%, rgba(34, 91, 157, 0.20), transparent 48%),
+        linear-gradient(180deg, rgba(17, 19, 38, 0.78) 0%, rgba(11, 13, 18, 0.38) 100%);
 }
 .homepage .hero-light {
-    display: none;
+    display: block;
+    opacity: 0.12;
 }
 .homepage .centered-hero h1 {
     font-size: clamp(2.8rem, 6.4vw, 5.4rem);
