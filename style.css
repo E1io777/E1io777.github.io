@@ -738,3 +738,26 @@ body > * {
 @media (prefers-reduced-motion: reduce) {
     .centered-hero *, .hero-light { animation: none !important; transition: none !important; }
 }
+
+
+/* Small homepage-only corrections: match the shared site background */
+.homepage {
+    background: var(--background);
+    background-image: none;
+}
+.homepage .centered-hero {
+    background: var(--background);
+}
+.homepage .hero-light {
+    display: none;
+}
+.homepage .centered-hero h1 {
+    font-size: clamp(2.8rem, 6.4vw, 5.4rem);
+    letter-spacing: -.05em;
+    line-height: 1.08;
+}
+@media (max-width: 700px) {
+    .homepage .centered-hero h1 {
+        font-size: clamp(2.35rem, 8.5vw, 4rem);
+    }
+}
