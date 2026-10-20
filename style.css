@@ -654,13 +654,40 @@ body > * {
     border-radius: 999px;
     text-decoration: none;
 }
-.centered-hero .primary-button, .home-contact .primary-button {
-    background: rgba(30, 48, 63, .8);
-    border: 1px solid rgba(163, 197, 224, .24);
+
+/* Primary button: lavender blue */
+.centered-hero .primary-button {
+    background: #8B96FF;
+    color: #10131C;
+    border: 1px solid #8B96FF;
+    box-shadow: none;
+    transition: background 0.25s ease, transform 0.25s ease;
 }
-.centered-hero .secondary-button, .home-contact .secondary-button {
-    background: rgba(17, 25, 35, .7);
-    border: 1px solid rgba(163, 197, 224, .19);
+
+/* Primary button hover effect */
+.centered-hero .primary-button:hover {
+    background: #A0A9FF;
+    border-color: #A0A9FF;
+    color: #10131C;
+    transform: translateY(-2px);
+}
+
+/* Secondary button: dark charcoal */
+.centered-hero .secondary-button {
+    background: #121620;
+    color: #F2F4F8;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    transition: background 0.25s ease, transform 0.25s ease;
+}
+
+/* Secondary button hover effect */
+.centered-hero .secondary-button:hover {
+    background: #1A2030;
+    border-color: rgba(255, 255, 255, 0.24);
+    color: #FFFFFF;
+    transform: translateY(-2px);
+}
+
 }
 .hero-highlights {
     display: flex;
