@@ -3,23 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Projects | Elio</title>
-    <meta name="description" content="Explore Elio's projects in machine learning, engineering, mathematics education, and web development.">
-    <meta name="theme-color" content="#0b0b14">
-
+    <title>Elio | Engineering & Technology Portfolio</title>
+    <meta name="description" content="Explore Elio's work in mechatronic engineering, mathematics education, machine learning, and web development.">
+    <meta name="theme-color" content="#080e16">
     <link rel="stylesheet" href="style.css">
 </head>
-
-<body>
-
-    <!-- Navigation -->
+<body class="homepage">
     <header>
         <nav class="navbar">
             <a href="index.html" class="logo">ELIO<span>.</span></a>
-
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" aria-current="page">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
             </ul>
@@ -27,177 +21,100 @@
     </header>
 
     <main>
-
-        <!-- Projects Introduction -->
-        <section class="hero">
-            <p class="intro">MY WORK & EXPERIMENTS</p>
-
-            <h1>
-                Ideas into<br>
-                <span>projects.</span>
-            </h1>
-
-            <p class="hero-description">
-                A collection of projects exploring machine learning,
-                engineering, mathematics education, and web development.
-                Each project represents an opportunity to learn,
-                experiment, and build practical skills.
-            </p>
+        <section class="centered-hero">
+            <div class="hero-light hero-light-one"></div>
+            <div class="hero-light hero-light-two"></div>
+            <div class="hero-light hero-light-three"></div>
+            <div class="hero-content-centered">
+                <p class="hero-eyebrow"><span class="status-dot"></span> ENGINEERING · MATHEMATICS · TECHNOLOGY</p>
+                <h1>Engineering ideas.<br><span>Building possibilities.</span></h1>
+                <p class="hero-subtitle">
+                    Exploring the connections between mechatronic engineering,
+                    mathematics, programming, and technology through teaching
+                    and hands-on projects.
+                </p>
+                <div class="hero-actions-centered">
+                    <a href="projects.html" class="button primary-button">View My Work <span aria-hidden="true">→</span></a>
+                    <a href="about.html" class="button secondary-button">Learn More</a>
+                </div>
+                <div class="hero-highlights">
+                    <span><i></i> Mechatronic Engineering</span>
+                    <span><i></i> Mathematics Education</span>
+                    <span><i></i> Machine Learning & Web Projects</span>
+                </div>
+            </div>
+            <div class="hero-bottom-glow" aria-hidden="true"></div>
         </section>
 
-
-        <!-- Project Collection -->
-        <section id="projects" class="section">
-            <p class="section-label">PROJECT COLLECTION</p>
-
-            <h2>Explore my work.</h2>
-
-            <div class="project-grid">
-
-                <!-- Project 1 -->
-                <article class="project-card">
-                    <p class="project-number">PROJECT 01 · MACHINE LEARNING</p>
-
-                    <h3>CNN Handwritten Digit Classification</h3>
-
-                    <p>
-                        A project exploring convolutional neural networks
-                        to classify handwritten digits using image data.
-                    </p>
-
-                    <p class="project-tags">
-                        Python · TensorFlow · CNN
-                    </p>
-
-                    <a href="https://github.com/E1io777/CNN-handwritten-digit-classification"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        View Source Code ↗
-                    </a>
-                </article>
-
-
-                <!-- Project 2 -->
-                <article class="project-card">
-                    <p class="project-number">PROJECT 02 · EDUCATION</p>
-
-                    <h3>Digital IGCSE Mathematics Guidebook</h3>
-
-                    <p>
-                        A digital Core and Extended mathematics resource
-                        featuring topic explanations, worked examples,
-                        and practice exercises.
-                    </p>
-
-                    <p class="project-tags">
-                        Mathematics · Education · Jupyter Book
-                    </p>
-
-                    <a href="https://e1io777.github.io/IGCSE_Mathematics_C-E/"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        Open the Textbook ↗
-                    </a>
-
-                    <a href="https://github.com/E1io777/IGCSE_Mathematics_C-E"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        View Source Code ↗
-                    </a>
-                </article>
-
-
-                <!-- Project 3 -->
-                <article class="project-card">
-                    <p class="project-number">PROJECT 03 · MACHINE LEARNING</p>
-
-                    <h3>Decision Tree Iris Classification</h3>
-
-                    <p>
-                        A machine learning notebook using the Iris dataset
-                        to explore decision tree classification and predict
-                        flower species from their measurements.
-                    </p>
-
-                    <p class="project-tags">
-                        Python · Decision Trees · Kaggle
-                    </p>
-
-                    <a href="https://www.kaggle.com/code/eliomerval/decision-tree-iris-classification"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        View Kaggle Notebook ↗
-                    </a>
-                </article>
-
-
-                <!-- Project 4 -->
-                <article class="project-card">
-                    <p class="project-number">PROJECT 04 · WEB DEVELOPMENT</p>
-
-                    <h3>Pillars Academy Website</h3>
-
-                    <p>
-                        A school website project designed to present
-                        school information through a clear layout
-                        and consistent visual design.
-                    </p>
-
-                    <p class="project-tags">
-                        HTML · CSS · JavaScript
-                    </p>
-
-                    <a href="https://github.com/E1io777/Pillars_Academy"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        View Source Code ↗
-                    </a>
-                </article>
-
-
-                <!-- Project 5 -->
-                <article class="project-card">
-                    <p class="project-number">PROJECT 05 · ENGINEERING</p>
-
-                    <h3>Automated Car Parking System</h3>
-
-                    <p>
-                        An academic embedded-systems project involving
-                        Arduino, ultrasonic sensors, IR sensors,
-                        and automated parking logic.
-                    </p>
-
-                    <p class="project-tags">
-                        Arduino · C++ · Sensors
-                    </p>
-
-                    <span class="coming-soon">ACADEMIC PROJECT</span>
-                </article>
-
+        <section class="section home-intro">
+            <div>
+                <p class="section-label">A LITTLE ABOUT ME</p>
+                <h2>Curiosity is where<br><span>every project starts.</span></h2>
+            </div>
+            <div class="home-intro-copy">
+                <p>My background brings together engineering and mathematics education. I enjoy turning technical ideas into practical projects, accessible explanations, and useful digital tools.</p>
+                <a class="text-link" href="about.html">Discover my background ↗</a>
             </div>
         </section>
 
+        <section class="section home-featured">
+            <div class="section-topline">
+                <div>
+                    <p class="section-label">A FEW THINGS I'VE MADE</p>
+                    <h2>Selected projects<span>.</span></h2>
+                </div>
+                <a class="text-link" href="projects.html">View all projects ↗</a>
+            </div>
+            <div class="featured-grid">
+                <article class="featured-card featured-card-large">
+                    <span class="featured-index">01 / MACHINE LEARNING</span>
+                    <div class="featured-symbol symbol-neural" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                    <h3>CNN Handwritten Digit Classification</h3>
+                    <p>Exploring convolutional neural networks for handwritten digit classification.</p>
+                    <a href="https://github.com/E1io777/CNN-handwritten-digit-classification" target="_blank" rel="noopener noreferrer">View project ↗</a>
+                </article>
+                <article class="featured-card">
+                    <span class="featured-index">02 / EDUCATION</span>
+                    <div class="featured-symbol symbol-book" aria-hidden="true">∑</div>
+                    <h3>Digital IGCSE Mathematics Guidebook</h3>
+                    <p>A Core and Extended learning resource with explanations and practice.</p>
+                    <a href="https://e1io777.github.io/IGCSE_Mathematics_C-E/" target="_blank" rel="noopener noreferrer">Explore textbook ↗</a>
+                </article>
+                <article class="featured-card">
+                    <span class="featured-index">03 / WEB DEVELOPMENT</span>
+                    <div class="featured-symbol symbol-web" aria-hidden="true"><span>〈/〉</span></div>
+                    <h3>Pillars Academy Website</h3>
+                    <p>A school website project built with front-end web technologies.</p>
+                    <a href="https://github.com/E1io777/Pillars_Academy" target="_blank" rel="noopener noreferrer">View source code ↗</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="section home-skills">
+            <div>
+                <p class="section-label">MY TOOLKIT</p>
+                <h2>Learning, making,<br><span>and improving.</span></h2>
+            </div>
+            <div class="skills-list">
+                <span>Python</span><span>C++</span><span>HTML & CSS</span><span>JavaScript</span><span>Machine Learning</span><span>Engineering</span><span>Mathematics</span>
+            </div>
+        </section>
+
+        <section class="home-contact">
+            <p class="section-label">LET'S CONNECT</p>
+            <h2>Interested in what I do?</h2>
+            <p>Explore my work or learn more about my background and experience.</p>
+            <div class="hero-actions-centered">
+                <a href="projects.html" class="button primary-button">Browse Projects ↗</a>
+                <a href="about.html" class="button secondary-button">About Me</a>
+            </div>
+        </section>
     </main>
 
-
-    <!-- Footer -->
     <footer>
         <p>Designed and built by Elio.</p>
-
-        <div>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-
-            <a href="https://github.com/E1io777"
-               target="_blank"
-               rel="noopener noreferrer">
-                GitHub ↗
-            </a>
-        </div>
+        <div><a href="about.html">About</a><a href="projects.html">Projects</a><a href="https://github.com/E1io777" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
     </footer>
-
     <script src="script.js"></script>
-
 </body>
 </html>
-```
